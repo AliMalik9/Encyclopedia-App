@@ -1,0 +1,52 @@
+:root{
+    --left: #add7e5;
+    --right: #f1e5e5;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font: 16px/1.6 montserrat;
+}
+
+#main{
+    width: 100%;
+    height: 100%;
+}
+ #left{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    clip-path: polygon(0 0,60% 0, 40% 100%, 0 100%);
+ }
+
+#left img{
+width: 60%;
+height: 100%;
+object-position: 100% 0%;
+object-fit: cover;
+}
+
+ #right{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    clip-path: polygon(60% 0, 100% 0, 100% 100%, 40% 100%);
+ }
+ #right img{
+    position: absolute;
+    right: 0;
+    width: 60%;
+    height: 100%;
+    object-position: 40% 0%;
+    object-fit: cover;
+    }
